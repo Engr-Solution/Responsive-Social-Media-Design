@@ -45,7 +45,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-2.jpg',
         userAvatar: './images/profile/profile-3.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
@@ -53,7 +53,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-3.jpg',
         userAvatar: './images/profile/profile-4.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
@@ -61,7 +61,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-4.jpg',
         userAvatar: './images/profile/profile-5.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
@@ -69,7 +69,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-5.jpg',
         userAvatar: './images/profile/profile-6.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
@@ -77,7 +77,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-6.jpg',
         userAvatar: './images/profile/profile-7.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
@@ -85,7 +85,7 @@ const Posts = [
     },
     {
         username: 'Henry Liz',
-        postImage: './images/post/feed-1.jpg',
+        postImage: './images/post/feed-7.jpg',
         userAvatar: './images/profile/profile-8.jpg',
         time: 'a minute ago',
         content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis iste nostrum obcaecati vitae, molestiae earum eos porro a. Nihil neque sunt cupiditate eveniet eius quae corporis in totam et cum.',
