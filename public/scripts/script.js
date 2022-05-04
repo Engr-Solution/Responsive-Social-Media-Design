@@ -112,3 +112,139 @@ id('prev').addEventListener('click', () => {
 id('next').addEventListener('click', () => {
   storyCarousel('right')
 })
+
+
+
+// INSERTING CONTENTS
+const insertStories = () => {
+
+  Stories.map(({username, userAvatar, storyPath}) => {
+    id('stories').innerHTML += `<div
+    class="relative min-w-[110px] min-h-[160px] shadow-md bg-box rounded-lg relative cursor-pointer overflow-hidden story bg-gradient-to-t from-slate-300/50 to-transparent"
+  >
+    <div
+      class="w-8 h-8 rounded-full shadow-md bg-gradient-to-b from-primary to-secondary p-1 absolute top-3 left-3 overflow-hidden"
+    >
+      <img
+        src='${userAvatar}'
+        alt="story-user "
+        class="w-full h-full object-fill rounded-full"
+      />
+    </div>
+    <img
+      src='${storyPath}'
+      alt="story"
+      class="w-full h-full"
+    />
+
+    <p
+      class="text-xs px-2 text-white absolute bottom-2 text-center"
+    >
+    ${username}
+    </p>
+  </div>`
+  })
+
+}
+
+
+// POSTS CONTENTS
+const insertPosts = () => {
+  Posts.map(({username, userAvatar, postImage, content, commentor, time}) => {
+    id('posts').innerHTML += ` <div
+    class="bg-box rounded-lg drop-shadow-md hover:drop-shadow-lg p-4"
+  >
+    <div class="flex justify-between items-center mb-2">
+      <div class="flex gap-4 items-center cursor-pointer">
+        <div
+          class="relative w-12 h-12 rounded-full mr-2 cursor-pointer"
+        >
+          <img
+            src='${userAvatar}'
+            alt="avatar"
+            class="w-full h-full rounded-full"
+          />
+          <span
+            class="absolute bottom-0 -right-[3px] w-3 h-3 rounded-full border-2 border-white p-1 bg-green-500 overflow-hidden z-40"
+          ></span>
+        </div>
+        <div class="flex flex-col">
+          <p class="text-lg">${username}</p>
+          <p class="flex items-center gap-4 text-slate-400 text-xs">
+            <span>Posted ${time}</span>
+            <span class="material-icons-outlined">public</span>
+          </p>
+        </div>
+      </div>
+      <span class="material-icons-outlined p-0 cursor-pointer">
+        more_vert
+      </span>
+    </div>
+    <div class="mb-2">
+      <p class="text-sm">
+      ${content}
+    </div>
+    <div class="w-full h-[260px] rounded-lg bg-bg mb-2">
+      <img
+        src='${postImage}'
+        alt="post image"
+        class="w-full h-full"
+      />
+    </div>
+    <div>
+      <div class="flex justify-between">
+        <span>
+          <span class="material-icons-outlined cursor-pointer">
+            favorite_border
+          </span>
+          <span class="material-icons-outlined cursor-pointer">
+            comment
+          </span>
+          <span class="material-icons-outlined cursor-pointer">
+            share
+          </span>
+        </span>
+        <span class="material-icons-outlined cursor-pointer">
+          bookmark_border
+        </span>
+      </div>
+      <div class="flex items-center">
+        <span class="flex mr-2">
+          
+          <img
+            src='${commentor[0]}'
+            alt="commentor"
+            class="w-6 h-6 -ml-2 border border-[2px] border-color rounded-full bg-color cursor-pointer"
+          />
+          <img
+            src='${commentor[1]}'
+            alt="commentor"
+            class="w-6 h-6 -ml-2 border border-[2px] border-color rounded-full bg-color cursor-pointer"
+          />
+          <img
+            src='${commentor[2]}'
+            alt="commentor"
+            class="w-6 h-6 -ml-2 border border-[2px] border-color rounded-full bg-color cursor-pointer"
+          />
+        </span>
+        <span class="flex text-xs text-color">
+          Liked by
+          <p class="font-semibold text-xs px-1 cursor-pointer">
+            Solution
+          </p>
+          and 1,950 others
+        </span>
+      </div>
+    </div>
+  </div>
+`
+  })
+
+}
+
+
+
+
+
+insertPosts()
+insertStories()
